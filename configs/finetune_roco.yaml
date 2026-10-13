@@ -1,0 +1,20 @@
+# Data (see data/README.md for the expected layout)
+train_csv: data/roco/roco-list.csv
+train_image_dir: data/roco/train/radiology/images
+val_csv: data/roco/local-val-list.csv
+val_image_dir: data/roco/val/radiology/images
+
+# Model
+model_name: ViT-B/16
+
+# Training
+seed: 42
+batch_size: 16
+epochs: 10
+learning_rate: 3.0e-6
+weight_decay: 0.0
+num_workers: 4
+sample_sentence: false
+
+# Outputs (git-ignored)
+output_dir: outputs/checkpoints/vit-b16-roco
